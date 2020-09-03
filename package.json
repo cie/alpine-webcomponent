@@ -1,6 +1,6 @@
 {
   "name": "alpine-webcomponent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Define custom elements in alpine js",
   "main": "src/alpine-webcomponent.js",
   "scripts": {
