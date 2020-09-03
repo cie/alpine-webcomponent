@@ -2,7 +2,9 @@
   if (typeof module !== 'undefined') {
     module.exports = { start }
   } else {
-    start()
+    if (document.readyState === 'loading')
+      window.addEventListener('DOMContentLoaded', start)
+    else start()
   }
 })(function () {
   for (const tpl of document.querySelectorAll('template[x-webcomponent]')) {
